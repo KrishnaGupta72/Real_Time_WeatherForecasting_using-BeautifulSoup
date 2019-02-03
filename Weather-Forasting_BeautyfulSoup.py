@@ -32,7 +32,7 @@ cloud_visi=soup1.find('div', class_="b-metar-table__additionally-container")
 # print(cloud_visi.text)
 
 #Writing all product(Printer) information into a csv file.
-with open("Weather_Forcast.csv", "a", newline='') as file:
+with open("Weather_Forecast.csv", "a", newline='') as file:
     # Defines column names into a csv file.
     field_names = ['Weather Today days', 'Weather days', '10 Day Weather days', 'Weather_Station_Info', 'Temperature', 'Wind', 'Cloud_Visibility']
     writer = csv.DictWriter(file, fieldnames=field_names)
